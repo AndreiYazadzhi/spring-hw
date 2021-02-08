@@ -1,8 +1,7 @@
 package spring.dao;
 
-import spring.model.User;
-
 import java.util.List;
+import spring.model.User;
 
 public interface UserDao {
     void add(User user);
