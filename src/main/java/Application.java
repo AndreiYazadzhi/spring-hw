@@ -12,6 +12,6 @@ public class Application {
         User alice = new User("alice@ali.ce");
         userService.add(bob);
         userService.add(alice);
-        userService.getAll().forEach(System.out::println);
+        userService.listUsers().forEach(System.out::println);
     }
 }

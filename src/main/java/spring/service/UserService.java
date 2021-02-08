@@ -6,5 +6,5 @@ import spring.model.User;
 public interface UserService {
     void add(User user);
 
-    List<User> getAll();
+    List<User> listUsers();
 }
