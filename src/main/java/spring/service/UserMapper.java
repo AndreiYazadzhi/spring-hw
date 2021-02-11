@@ -11,12 +11,5 @@ public class UserMapper {
         dto.setLogin(user.getLogin());
         return dto;
     }
-
-    public User fromDto(UserResponseDto dto) {
-        User user = new User();
-        user.setLogin(dto.getLogin());
-        user.setPassword(dto.getPassword());
-        return user;
-    }
 }
 

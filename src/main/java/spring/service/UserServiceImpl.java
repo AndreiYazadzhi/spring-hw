@@ -1,7 +1,7 @@
 package spring.service;
 
 import java.util.List;
-import java.util.Optional;
+import java.util.NoSuchElementException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import spring.dao.UserDao;
@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Optional<User> get(Long id) {
-        return userDao.get(id);
+    public User get(Long id) {
+        return userDao.get(id).orElseThrow(() -> new NoSuchElementException(String.valueOf(id)));
     }
 }
