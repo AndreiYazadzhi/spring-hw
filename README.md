@@ -1,5 +1,4 @@
 # Opera Booking Service 
-<<<<<<< spring-08
 =======
 In this project used N-tier architecture with DB layer, DAO layer, Service layer, Controllers layer and View layer.
 Project was developed according to SOLID principles with authorization and authentication.
